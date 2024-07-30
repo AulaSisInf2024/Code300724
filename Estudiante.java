@@ -1,4 +1,4 @@
-public public class Estudiante {
+public class Estudiante {
   String nombres, apellido_paterno, apellido_materno;
   int edad;
   double estatura;
@@ -14,5 +14,6 @@ public public class Estudiante {
   @Override
   public String toString(){
     String res = ("Hola soy " + nombres + " " + apellido_paterno + " " + apellido_materno + " tengo " + edad + " y mido " + estatura);
+    return res;  
   }
 }

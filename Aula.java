@@ -11,7 +11,7 @@ public class Aula{
       Estudiante e = estudiantes.get(marcadoParaBorrar);
       for(int i=1; i < estudiantes.size(); i++){
         Estudiante auxiliar = estudiantes.get(i);
-        if(e.nombre.charAt(0) > auxiliar.nombre.charAt(0)){
+        if(e.nombres.charAt(0) > auxiliar.nombres.charAt(0)){
           marcadoParaBorrar = i;
           e = auxiliar;
         }
@@ -25,7 +25,7 @@ public class Aula{
   public int accion1(char letraMayuscula){
     int respuesta = 0;
     for(Estudiante e: estudiantes){
-      if(e.apellido_paterno.charAt(0) == letra){
+      if(e.apellido_paterno.charAt(0) == letraMayuscula){
         respuesta += 1;
       }
     }
@@ -39,6 +39,6 @@ public class Aula{
         auxiliar = e;
       }
     }
-    return auxiliar;
+    return "" + auxiliar.estatura;
   }
 }
